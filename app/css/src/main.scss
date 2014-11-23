@@ -1,0 +1,10 @@
+$variable: green;
+
+
+body {
+  color: blue;
+  a {
+    color: $variable;
+  }
+  
+}
