@@ -2,12 +2,14 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
-      files: {
-        'app/js/build/main.min.js': 'app/js/src/*.js'
+      build: {
+        files: {
+          'app/js/build/main.min.js': 'app/js/src/**/*.js'
+        }
       }
     },
     sass: {
-      dist: {
+      build: {
         options: {
           style: 'compressed'
         },
