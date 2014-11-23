@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
       files: {
-        'app/js/build/main.min.js': 'app/js/src/**/*.js'
+        'app/js/build/main.min.js': 'app/js/src/*.js'
       }
     },
     sass: {
@@ -34,5 +34,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-wiredep');
 
-  grunt.registerTask('default', ['wiredep', 'uglify', 'sass']);
+  grunt.registerTask('default', ['uglify', 'sass']);
 };

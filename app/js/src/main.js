@@ -1,4 +1,1 @@
-$( function() {
-  console.log( "Fdsf" );
-  console.log( "FSDfdsf" );
-});
+var APP = angular.module( "myApp", [ "firebase", "route", "Restangular" ] );
