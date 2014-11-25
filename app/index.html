@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="resistance">
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
   <title>Resistance</title>
+  
+  <link rel="stylesheet" href="css/build/main.min.css" />
 
   <!-- bower:js -->
   <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -25,6 +27,12 @@
   <script src="../bower_components/firebase/firebase.js"></script>
   <script src="../bower_components/angularfire/dist/angularfire.js"></script>
   <!-- endbower -->
+  
+  <script src="js/build/main.min.js"></script>
 </head>
-<body ng-view></body>
+<body ng-controller="MyController">
+  <div class="container">
+    <h1>{{ thing }}</h1>
+  </div>
+</body>
 </html>
